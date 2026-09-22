@@ -1,0 +1,142 @@
+{
+    "baseline": {
+        "baseline_targets": 2,
+        "runtime": 0.19959712028503418
+    },
+    "resolution": {
+        "separations_deg": [
+            5.0,
+            10.0,
+            15.0,
+            20.0,
+            25.0,
+            30.0,
+            35.0
+        ],
+        "trials": 10,
+        "success_rates": {
+            "bartlett": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                1.0
+            ],
+            "mvdr": [
+                0.0,
+                0.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "music": [
+                0.0,
+                0.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ]
+        }
+    },
+    "snr": {
+        "snrs_db": [
+            -10,
+            -5,
+            0,
+            5,
+            10,
+            20
+        ],
+        "trials": 20,
+        "angle_success_rate": {
+            "bartlett": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "music": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "azimuth_rmse_deg": {
+            "bartlett": [
+                0.0954,
+                0.0889,
+                0.0742,
+                0.07,
+                0.07,
+                0.07
+            ],
+            "music": [
+                0.0954,
+                0.0889,
+                0.0742,
+                0.07,
+                0.07,
+                0.07
+            ]
+        }
+    },
+    "snapshots": {
+        "snapshot_counts": [
+            4,
+            8,
+            16,
+            32,
+            64,
+            128
+        ],
+        "trials": 20,
+        "azimuth_rmse_music_deg": [
+            1.6564,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+        ],
+        "azimuth_rmse_bartlett_deg": [
+            18.8601,
+            24.7119,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ]
+    },
+    "calibration": {
+        "trials": 20,
+        "true_azimuth_deg": 15.0,
+        "mean_error_uncalibrated_deg": 1.025,
+        "mean_error_calibrated_deg": 0.0,
+        "std_error_uncalibrated_deg": 0.7822,
+        "std_error_calibrated_deg": 0.0
+    },
+    "benchmark": {
+        "repeats": 3,
+        "mean_runtime_seconds": {
+            "bartlett": 0.1655,
+            "mvdr": 0.1672,
+            "music": 0.2084
+        },
+        "std_runtime_seconds": {
+            "bartlett": 0.0005,
+            "mvdr": 0.0022,
+            "music": 0.015
+        }
+    }
+}

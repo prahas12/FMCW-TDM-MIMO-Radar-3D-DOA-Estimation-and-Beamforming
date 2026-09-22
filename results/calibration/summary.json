@@ -1,0 +1,8 @@
+{
+    "trials": 20,
+    "true_azimuth_deg": 15.0,
+    "mean_error_uncalibrated_deg": 1.025,
+    "mean_error_calibrated_deg": 0.0,
+    "std_error_uncalibrated_deg": 0.7822,
+    "std_error_calibrated_deg": 0.0
+}

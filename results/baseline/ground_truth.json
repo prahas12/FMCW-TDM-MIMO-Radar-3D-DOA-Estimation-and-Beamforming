@@ -1,0 +1,16 @@
+[
+    {
+        "range": 5.0,
+        "velocity": 2.0,
+        "azimuth": 10.0,
+        "elevation": 5.0,
+        "rcs": 1.0
+    },
+    {
+        "range": 6.0,
+        "velocity": -1.0,
+        "azimuth": -15.0,
+        "elevation": 10.0,
+        "rcs": 2.0
+    }
+]

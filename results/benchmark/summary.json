@@ -1,0 +1,13 @@
+{
+    "repeats": 3,
+    "mean_runtime_seconds": {
+        "bartlett": 0.1655,
+        "mvdr": 0.1672,
+        "music": 0.2084
+    },
+    "std_runtime_seconds": {
+        "bartlett": 0.0005,
+        "mvdr": 0.0022,
+        "music": 0.015
+    }
+}

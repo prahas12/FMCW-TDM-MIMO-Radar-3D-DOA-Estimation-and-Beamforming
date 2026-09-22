@@ -1,0 +1,63 @@
+{
+    "radar": {
+        "carrier_frequency": "77.0e9",
+        "bandwidth": "4.0e9",
+        "chirp_duration": 4e-05,
+        "idle_time": 1e-05,
+        "adc_sample_rate": "10.0e6",
+        "adc_samples": 256,
+        "num_chirps": 128,
+        "tx_count": 3,
+        "rx_count": 4
+    },
+    "array": {
+        "tx_spacing_x": 2,
+        "tx_spacing_y": 0.5,
+        "rx_spacing_x": 0.5,
+        "rx_spacing_y": 0.0
+    },
+    "targets": [
+        {
+            "range": 5.0,
+            "velocity": 2.0,
+            "azimuth": 10.0,
+            "elevation": 5.0,
+            "rcs": 1.0
+        },
+        {
+            "range": 6.0,
+            "velocity": -1.0,
+            "azimuth": -15.0,
+            "elevation": 10.0,
+            "rcs": 2.0
+        }
+    ],
+    "simulation": {
+        "snr_db": 20.0,
+        "noise_figure": 10.0,
+        "seed": 42
+    },
+    "processing": {
+        "range_fft_size": 512,
+        "doppler_fft_size": 256,
+        "range_window": "hann",
+        "doppler_window": "hann"
+    },
+    "detection": {
+        "cfar_type": "ca",
+        "pfa": "1e-4",
+        "train_cells": 16,
+        "guard_cells": 4
+    },
+    "angle_estimation": {
+        "azimuth_scan_min": -60,
+        "azimuth_scan_max": 60,
+        "azimuth_scan_res": 1.0,
+        "elevation_scan_min": -30,
+        "elevation_scan_max": 30,
+        "elevation_scan_res": 1.0,
+        "method": "music",
+        "num_sources_method": "mdl",
+        "known_num_sources": 2
+    }
+}
